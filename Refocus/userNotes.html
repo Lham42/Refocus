@@ -1,0 +1,70 @@
+
+<!-- not sure where it would be included but javascript can update the contents of a paragraph or other element for the notes section-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset= "UTF-8">
+        <meta name = "viewport" content= "width=device-width">
+        <meta http-equiv="X-UA-Compatible" content = "ie=edge"/>
+        <link rel ="stylesheet" href ="styles/userNotes.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <title> Notes </title>
+
+    </head>
+    <body>
+ 
+        <div id="studyNotes">Notes</div> 
+
+
+<!-- loading in icons --> 
+<a href = "javascript:void(0)">
+ <svg id = "moon1" class = "icon" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" onclick="toggleDarkMode()">
+<path d="M26.7499 15.1192C26.527 17.5306 25.622 19.8287 24.1407 21.7446C22.6594 23.6605 20.6631 25.1149 18.3854 25.9376C16.1077 26.7603 13.6428 26.9173 11.2792 26.3903C8.91547 25.8633 6.75077 24.6739 5.03835 22.9615C3.32592 21.2491 2.13661 19.0844 1.60956 16.7207C1.08252 14.357 1.23954 11.8921 2.06226 9.61442C2.88498 7.33672 4.33937 5.34044 6.25525 3.85915C8.17112 2.37786 10.4692 1.47285 12.8807 1.25C11.4689 3.16005 10.7895 5.51339 10.9661 7.882C11.1427 10.2506 12.1637 12.4772 13.8432 14.1567C15.5227 15.8362 17.7492 16.8571 20.1179 17.0337C22.4865 17.2104 24.8398 16.531 26.7499 15.1192Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+</a>
+
+ <a href="/home.html">
+    <svg id = "home" class = "icon" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.33333 25V13H15.6667V25M1 9.4L12 1L23 9.4V22.6C23 23.2365 22.7425 23.847 22.284 24.2971C21.8256 24.7471 21.2039 25 20.5556 25H3.44444C2.79614 25 2.17438 24.7471 1.71596 24.2971C1.25754 23.847 1 23.2365 1 22.6V9.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</a>
+
+  <a href="/userStats.html">
+<svg id = "clipboard1" class = "icon" width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.6665 3.66684H17.9998C18.6187 3.66684 19.2122 3.91267 19.6498 4.35026C20.0873 4.78784 20.3332 5.38134 20.3332 6.00017V22.3335C20.3332 22.9523 20.0873 23.5458 19.6498 23.9834C19.2122 24.421 18.6187 24.6668 17.9998 24.6668H3.99984C3.381 24.6668 2.78751 24.421 2.34992 23.9834C1.91234 23.5458 1.6665 22.9523 1.6665 22.3335V6.00017C1.6665 5.38134 1.91234 4.78784 2.34992 4.35026C2.78751 3.91267 3.381 3.66684 3.99984 3.66684H6.33317M7.49986 1.3335H14.4999C15.1442 1.3335 15.6665 1.85583 15.6665 2.50016V4.8335C15.6665 5.47783 15.1442 6.00016 14.4999 6.00016H7.49986C6.85553 6.00016 6.33319 5.47783 6.33319 4.8335V2.50016C6.33319 1.85583 6.85553 1.3335 7.49986 1.3335Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+
+</a>
+
+<!--
+<img src = "Resources/box/bluebox.svg" id = "frame1" /> 
+template of study info --> 
+
+<svg id = "calendar" class = "icon" width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.3333 1.1665V5.49984M6.66667 1.1665V5.49984M1.25 9.83317H20.75M3.41667 3.33317H18.5833C19.78 3.33317 20.75 4.30322 20.75 5.49984V20.6665C20.75 21.8631 19.78 22.8332 18.5833 22.8332H3.41667C2.22005 22.8332 1.25 21.8631 1.25 20.6665V5.49984C1.25 4.30322 2.22005 3.33317 3.41667 3.33317Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" onclick = "openTimeline()"/>
+</svg>
+
+
+<!--<img src = "Resources/icon/calendar.svg" id = "calendar"/>  -->
+
+<svg id = "clock" class = "icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19 21L12 16L5 21V5C5 4.46957 5.21071 3.96086 5.58579 3.58579C5.96086 3.21071 6.46957 3 7 3H17C17.5304 3 18.0391 3.21071 18.4142 3.58579C18.7893 3.96086 19 4.46957 19 5V21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" onclick = "openDisplay()"/>
+</svg>
+
+
+
+	<script src="/scripts/userNotes.js">
+	</script>
+
+
+</div>
+
+<p id = sTopic></s>
+
+
+
+  </body>
+</html>

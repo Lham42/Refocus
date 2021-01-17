@@ -1,0 +1,81 @@
+body{
+  font-family: Open Sans, sans-serif;
+  background-color: #2f4653; 
+  overflow-x:hidden; 
+  margin: auto;
+  padding:0px;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+ 
+}
+
+.title{
+position: absoulte;
+top: 10vh;
+font-family:Open Sans, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 50px;
+color: white;
+text-align: center;
+}
+
+#scribble4{
+  position:absolute;
+  left: -56px;
+  top: -350px;
+  z-index: -3;
+  opacity: 1;
+color: grey;}
+
+h3 {
+      white-space: pre-wrap;
+  }
+
+
+.talk {
+position: absolute;
+width: 100px;
+height: 40px;
+left: 87vh;
+top: 10vw;
+border-color: white;
+filter: drop-shadow(0px 6px 0px #92C0DA);
+border-radius: 8px;
+
+font-family:Open Sans, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #2F4653;
+
+}
+
+.talk:hover{
+  filter:none;
+  top:11vw;
+}
+
+.end{
+
+position: absolute;
+width: 100px;
+height: 40px;
+left: 107vh;
+top: 10vw;
+border-color: white;
+filter: drop-shadow(0px 6px 0px #92C0DA);
+border-radius: 8px;
+
+font-family: Open Sans, sans-serif;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #2F4653;
+}  
+
+.end:hover{
+  filter:none;
+  top:11vw;
+}
