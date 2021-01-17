@@ -1,0 +1,101 @@
+body {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  color:#2F4653;
+
+  transition: all 300ms ease;
+}
+
+#subhead{
+position: absolute;
+width: 151px;
+height: 20px;
+left: 9.0vw;
+top: 22vh;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 20px;
+color: var(--svgColour);
+
+}
+
+
+
+
+
+
+
+
+
+
+#statTitle{
+position: absolute;
+width: 85px;
+height: 44px;
+left: 155px;
+top: 60px;
+font-family: Open Sans;
+font-style: italic;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+
+}
+
+a{
+
+color:inherit;
+}
+#moon{
+position: absolute;
+width: 34px;
+height: 34px;
+left: 84px;
+top: 70px;
+}
+
+#notes{
+position: absolute;
+width: 20px;
+height: 24px;
+left: 1160px;
+top: 67px;
+
+}
+
+#home{
+position: absolute;
+width: 22px;
+height: 24px;
+left: 1100px;
+top: 67px;
+}
+
+.icon {
+  color: #2F4653;
+  padding:2px;
+
+  transition: all 600ms ease;
+}
+.icon:hover{
+background-color: rgb(165, 215, 217);
+border-radius: 6px;
+cursor:pointer; 
+}
+
+.darkMode{
+  --svgColour: white; /*;-;; ;-; ;-; ;-;*/ 
+  color: white;
+background-color: #2F4653;
+}
+
+
+.icon.darkMode:hover{
+background-color: rgb(34, 40, 59);
+border-radius: 6px;
+cursor:pointer;
+}

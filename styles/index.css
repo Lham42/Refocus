@@ -1,0 +1,453 @@
+
+html {
+  scroll-behavior: smooth;
+}
+body{
+font-family: Open Sans, sans-serif;
+background-color: #2f4653; 
+  overflow-x:hidden; 
+  margin: auto;
+padding:0px;
+	width:100vw;
+	height:100vh;
+	position:absolute;
+ 
+}
+
+h1 {
+font-size: 60px;  
+font-style: normal;
+font-weight: 800;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+color:white;
+}
+
+#promo1{
+  position: absolute;
+  width:31vw;
+  top: 5vh;
+  left: 57vw;
+}
+
+#promo2{
+  width:27vw;
+  height:29vw;
+  position:absolute;
+  top:27vh;
+  left:40vw;
+}
+
+#featuresLink{
+  display: inline-block;
+}
+#contact{
+  padding-left: 6vw;
+  display: inline-block;
+}
+
+#login{
+  position:absolute;
+  right: 20vw;
+  display:inline-block;
+}
+
+#navbar {
+position: absolute;
+width: 100vw;
+height: 19px;
+left: 13vw;
+top: 50px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 3vh;
+line-height: 19px;
+/* identical to box height */
+
+color: #FFFFFF;
+}
+
+#heading {
+position: absolute;
+width: 20vw;
+height: 10vh;
+left: 13vw;
+top: 35vh;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 800;
+font-size: 10vh;
+line-height: 76px;
+
+color: #FFFFFF;
+}
+
+.button {
+position: absolute;
+top: 14vh;
+width: 10vw;
+height: 70%;
+border-color: white;
+filter: drop-shadow(0px 6px 0px #92C0DA);
+border-radius: 8px;
+
+font-family: Open Sans;
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+color: #2F4653;
+animation-timing-function: ease-in-out;
+animation-duration: 200ms;
+
+}
+
+.button:hover{
+  filter:none;
+  position:absolute;
+  top:15vh;
+  cursor: pointer;
+}
+
+#loginButton{
+background: #2F4653;
+border: 1.5px solid #2F4653;
+width:135px;
+height:54px;
+border-radius: 6px;
+color:white;
+position:absolute;
+top: 85%;
+left:60%;
+}
+
+#loginButton:hover{
+  cursor: pointer;
+  border-color: #2F4653;
+  background-color: white;
+  color: #2F4653;
+}
+
+#logo{
+  position:absolute;
+  top: 7vh;
+  left: 5vw;
+}
+
+a {
+  text-decoration:none;
+  color:white;
+}
+
+#overlay {
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  transition: all 300ms ease;
+}
+
+.overlayNormal {
+  background: rgb(255,255,255, 0);
+}
+
+.overlayShow {
+  background: rgb(255,255,255, 0.2);
+}
+
+#login-overlay-ID
+{
+border-radius: 6px;
+}
+
+.login-overlay{
+opacity:1;
+position: relative;
+top: -100vh;
+left: 30vw;
+width: min(85vh, 40vw);
+height: min(85vh, 40vw);
+background: #FFFFFF;
+transition: top 2s ease 0s;
+}
+
+.open{
+  top:7vh;
+}
+
+#innerDiv{
+position: absolute;
+width: 405px;
+height: 400.75px;
+left: 67.5px;
+top: 50.25px;
+display:flex;
+justify-content: center;
+color: #2F4653;
+}
+
+#overlayTitle {
+
+font-family: Open Sans;
+font-style: italic;
+font-weight: 300;
+font-size: 27px;
+line-height: 37px;
+}
+
+#register {
+ position: absolute; 
+ top: 100%;
+color: #2F4653; 
+text-decoration:underline;
+}
+form{
+  position:absolute;
+  left:2%;
+  top:5%;
+  width:50%;
+  height:90%;
+}
+
+input {
+  text-indent:8px;
+  width: 26vw;
+  height: 10%;
+	font-family:Open Sans;
+	font-size:17px;
+}
+#username{
+  position: absolute;
+  top:30%;
+  border-radius: 6px;
+  border-color:white;
+  background-color: #DCEDF6;
+  padding: 5px;
+
+}
+#password{
+  position: absolute;
+  top:60%;
+  border-radius: 6px;
+  border-color:white;
+  background-color: #DCEDF6;
+  padding:5px;
+}
+h3 {
+  font-family: Open Sans;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #000000;
+}
+#uText {
+  position:absolute;
+  left:4%;
+  top:18%;
+}
+#pText {
+  position:absolute;
+  left:4%;
+  top:48%;
+}
+
+#forgotPass {
+  position:absolute;
+  left:4%;
+  top: 75%;
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+
+/* identical to box height */
+text-decoration-line: underline;
+
+color: #2F4653;
+
+
+}
+
+
+/*content pane----------------------------*/
+#headingcontact {
+ font-size: 36px; 
+  position: absolute;
+  left: 8%;
+  top: 1700px;
+  font-style: italic;
+line-height: 49px;
+color: #2F4653; 
+}
+
+
+
+#airplane{
+position: absolute;
+width: 402px;
+height: 127px;
+left: px;
+top: 1853px;
+}
+
+#ig{
+color:#2F4653 ;
+  position:absolute;
+width: 26.67px;
+height: 26.67px;
+left: 620.67px;
+top: 2220px;
+}
+
+#ig:hover {
+background-color: rgb(165, 215, 217);
+border-radius: 8px;
+}
+
+#mail{
+color:#2F4653; 
+position: absolute;
+width: 30px;
+height: 28px;
+left: 560px;
+top: 2220px;
+}
+
+#mail:hover {
+background-color: rgb(165, 215, 217);
+border-radius: 8px;
+}
+
+#github{
+color:#2F4653;
+position: absolute;
+width: 26px;
+height: 27.16px;
+left: 680.67px;
+top: 2220px;
+}
+
+#github:hover {
+background-color: rgb(165, 215, 217);
+border-radius: 8px;
+}
+
+
+
+#backToTop{
+  color:#2F4653;
+  font-size: 6;
+  font-weight:bold;
+  position: absolute;
+  top:-89%;
+  left:-5%;
+}
+
+#backToTop:hover {
+background-color: rgb(164, 232, 235);
+border-radius: 8px;
+}
+
+.backing{
+position: absolute;
+width: 100%;
+height: 600px;
+left: 0px;
+top: 1680px;
+background: #FFFFFF;
+} 
+
+
+#mainScribble{
+  position: absolute;
+  left: -10vw;
+  top: 0px;
+  color: white;
+  transform: rotate(10.41deg);
+  width: 105vw;  //1426px;
+  height: 105vh ; //637px; 
+  z-index: -2;
+}
+/*features pane----------------------------*/
+#features{
+  width:100%;
+  height:700px;
+  position: absolute;
+  top:900px;
+  padding:20px;
+  display:flex;
+  justify-content: center;
+
+}
+#headingFeatures{
+  font-size: 36px; 
+  position: absolute;
+  left: 8%;
+  top: -10px;
+  font-style: italic;
+
+}
+
+#backToTopFeatures{
+  font-size: 6;
+  font-weight:bold;
+  position: absolute;  
+  left:3%;
+}
+
+#backToTopFeatures:hover {
+background-color: rgb(164, 232, 235);
+border-radius: 8px;
+}
+
+#iT{
+ height: 8vmin;
+}
+
+p {
+font-family: Open Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 17px;
+line-height: 22px;
+
+color: #FFFFFF;
+}
+
+#mainText{
+font-size: 22px;
+font-weight:bold;
+width:24vw;
+position: absolute;
+top:170vh;
+left:8vw;
+}
+
+#promoText1 {
+width: 24vw;
+height: 80vh;
+position:absolute;
+top:190vh;
+left:8vw;
+}
+
+#promoText2 {
+width: 18vw;
+height: 70vh;
+position:absolute;
+top:190vh;
+left:70vw;
+}
+
+#cForm{
+  width:40vw;
+  position: absolute;
+  top:1700px;
+  left:50vw;
+}

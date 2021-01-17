@@ -1,0 +1,115 @@
+
+:root{
+ --svgColour:#2F4653; 
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+color: #2F4653;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+
+  transition: all 300ms ease;
+}
+
+#Begin{
+position: absolute;
+width: 17.4vw;
+height: 9.4vh;
+left: 12.4vw;
+top: 46.8vh;
+
+font-family: Open Sans,sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 56px;
+line-height: 76px;
+text-transform: uppercase;
+}
+a{
+  color:inherit;
+}
+
+#Begin:hover {
+color: rgb(94, 158, 160);
+}
+
+
+
+#moon{
+position: absolute;
+width: 5vw;
+height: 5vh;
+left: 5.97vw;
+top: 7.33vh;
+color: var (--svgColour);
+}
+
+
+#home{
+position: absolute;
+width: 3vw;
+height:3vh;
+left: 12vw;
+top: 60.5vh;
+color: var (--svgColour);
+}
+
+
+#stats{
+position: absolute;
+width: 3vw;
+height:4vh;
+left: 18.2vw;
+top: 60vh;
+color: var (--svgColour);
+}
+
+
+#book{
+position: absolute;
+width: 3.5vw;
+height:4vh;
+left: 24vw;
+top: 60vh;
+color: var (--svgColour);
+}
+
+#beginscribble{
+position: absolute;
+width: 80vw;
+height: 100vh;
+left: 60vh;
+top: -20vh;
+
+transform: rotate(17.15deg);
+}
+
+
+
+.icon {
+  color: #2F4653;
+  padding:2px;
+
+  transition: all 600ms ease;
+}
+.icon:hover{
+background-color: rgb(165, 215, 217);
+border-radius: 6px;
+cursor:pointer;
+
+}
+
+.darkMode{
+  --svgColour: white; /*;-;; ;-; ;-; ;-;*/ 
+  color: white;
+background-color: #2F4653;
+}
+
+
+.icon.darkMode:hover{
+background-color: rgb(34, 40, 59);
+border-radius: 6px;
+cursor:pointer;
+}
